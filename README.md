@@ -2,15 +2,15 @@
 
 ## Sommaire
 
-- [ ] Chapitre 1 : Afficher du texte dans la console de développeur
-- [ ] Chapitre 2 : Créer et modifier une variable
-- [ ] Chapitre 3 : Créer des constantes
-- [ ] Chapitre 4 : Créer des nombres
-- [ ] Chapitre 5 : Créer des chaînes de caractères
-- [ ] Chapitre 6 : Construire des branchements conditionels
-- [ ] Chapitre 7 : Créer des objets
-- [ ] Chapitre 8 : Ajouter des propriétés à un objet
-- [ ] Chapitre 9 : Modifier des propriétés d'un objet
+- [ ] Chapitre 01 : Afficher du texte dans la console de développeur
+- [ ] Chapitre 02 : Créer et modifier une variable
+- [ ] Chapitre 03 : Créer des constantes
+- [ ] Chapitre 04 : Créer des nombres
+- [ ] Chapitre 05 : Créer des chaînes de caractères
+- [ ] Chapitre 06 : Construire des branchements conditionels
+- [ ] Chapitre 07 : Créer des objets
+- [ ] Chapitre 08 : Ajouter des propriétés à un objet
+- [ ] Chapitre 09 : Modifier des propriétés d'un objet
 - [ ] Chapitre 10 : Supprimer des propriétés d'un objet
 - [ ] Chapitre 11 : Boucler sur des propriétés d'un objet
 - [ ] Chapitre 12 : Créer des fonctions

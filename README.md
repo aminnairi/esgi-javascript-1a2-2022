@@ -2,4 +2,4 @@
 
 ## Sommaire
 
-- [Chapitre 0](./chapitre-0) : Récupération d'une liste d'auteurs
+- [Chapitre 00](./chapitre-00) : Récupération d'une liste d'auteurs

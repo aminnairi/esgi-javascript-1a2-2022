@@ -8,34 +8,27 @@
 - [X] [Chapitre 04](./chapitre-04) : Nombres
 - [X] [Chapitre 05](./chapitre-05) : Chaîne de caractères
 - [X] [Chapitre 06](./chapitre-06) : Conditions
-- [ ] [Chapitre 07](./chapitre-07) : Objets
-- [ ] Chapitre 08 : Ajouter des propriétés à un objet
-- [ ] Chapitre 09 : Modifier des propriétés d'un objet
-- [ ] Chapitre 10 : Supprimer des propriétés d'un objet
-- [ ] Chapitre 11 : Boucler sur des propriétés d'un objet
-- [ ] Chapitre 12 : Créer des fonctions
-- [ ] Chapitre 13 : Retourner des valeurs dans une fonction
-- [ ] Chapitre 14 : Accepter des arguments dans une fonction
-- [ ] Chapitre 15 : Accepter des arguments optionels dans une fonction
-- [ ] Chapitre 16 : Accepter des arguments variadiques dans une fonction
-- [ ] Chapitre 17 : Créer des tableaux
-- [ ] Chapitre 18 : Ajouter des éléments à un tableau
-- [ ] Chapitre 19 : Supprimer des éléments à un tableau
-- [ ] Chapitre 20 : Modifier des éléments à un tableau
-- [ ] Chapitre 21 : Boucler sur les valeurs d'un tableau
-- [ ] Chapitre 22 : Boucler sur les indexes d'un tableau
-- [ ] Chapitre 23 : Récupérer un élément HTML par son identifiant
-- [ ] Chapitre 24 : Récupérer plusieurs éléments HTML par leur classe
-- [ ] Chapitre 25 : Récupérer un élément HTML par son sélécteur CSS
-- [ ] Chapitre 26 : Récupérer plusieurs éléments HTML par leur sélécteur CSS
-- [ ] Chapitre 27 : Modifier le contenu texte d'un élément HTML
-- [ ] Chapitre 28 : Ajouter un élément HTML à un autre élément HTML
-- [ ] Chapitre 29 : Supprimer un élément HTML à un autre élément HTML
-- [ ] Chapitre 30 : Ajouter une classe à un élément HTML
-- [ ] Chapitre 31 : Créer des documents XML
-- [ ] Chapitre 32 : Créer des balises XML
-- [ ] Chapitre 33 : Ajouter des attributs à une balise XML
-- [ ] Chapitre 34 : Récupérer des documents XML distants
-- [ ] Chapitre 35 : Afficher le contenu d'un document XML distant dans une page HTML
-- [ ] Chapitre 36 : Exécuter des instructions après un délai
-- [ ] Chapitre 37 : Exécuter des instructions à interval régulier
+- [X] [Chapitre 07](./chapitre-07) : Objets
+- [X] [Chapitre 08](./chapitre-08) : Créer des fonctions
+- [X] [Chapitre 09](./chapitre-09) : Tableaux
+- [ ] [Chapitre 10](./chapitre-10) : Constructeurs
+- [ ] Chapitre ??? : Ajouter des éléments à un tableau
+- [ ] Chapitre ??? : Supprimer des éléments à un tableau
+- [ ] Chapitre ??? : Modifier des éléments à un tableau
+- [ ] Chapitre ??? : Boucler sur les valeurs d'un tableau
+- [ ] Chapitre ??? : Boucler sur les indexes d'un tableau
+- [ ] Chapitre ??? : Récupérer un élément HTML par son identifiant
+- [ ] Chapitre ??? : Récupérer plusieurs éléments HTML par leur classe
+- [ ] Chapitre ??? : Récupérer un élément HTML par son sélécteur CSS
+- [ ] Chapitre ??? : Récupérer plusieurs éléments HTML par leur sélécteur CSS
+- [ ] Chapitre ??? : Modifier le contenu texte d'un élément HTML
+- [ ] Chapitre ??? : Ajouter un élément HTML à un autre élément HTML
+- [ ] Chapitre ??? : Supprimer un élément HTML à un autre élément HTML
+- [ ] Chapitre ??? : Ajouter une classe à un élément HTML
+- [ ] Chapitre ??? : Créer des documents XML
+- [ ] Chapitre ??? : Créer des balises XML
+- [ ] Chapitre ??? : Ajouter des attributs à une balise XML
+- [ ] Chapitre ??? : Récupérer des documents XML distants
+- [ ] Chapitre ??? : Afficher le contenu d'un document XML distant dans une page HTML
+- [ ] Chapitre ??? : Exécuter des instructions après un délai
+- [ ] Chapitre ??? : Exécuter des instructions à interval régulier

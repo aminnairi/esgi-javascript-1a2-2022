@@ -6,9 +6,9 @@
 - [X] [Chapitre 02](./chapitre-02) : Variables
 - [X] [Chapitre 03](./chapitre-03) : Booléens
 - [X] [Chapitre 04](./chapitre-04) : Nombres
-- [ ] [Chapitre 05](./chapitre-05) : Chaîne de caractères
-- [ ] Chapitre 06 : Construire des branchements conditionels
-- [ ] Chapitre 07 : Créer des objets
+- [X] [Chapitre 05](./chapitre-05) : Chaîne de caractères
+- [X] [Chapitre 06](./chapitre-06) : Conditions
+- [ ] [Chapitre 07](./chapitre-07) : Objets
 - [ ] Chapitre 08 : Ajouter des propriétés à un objet
 - [ ] Chapitre 09 : Modifier des propriétés d'un objet
 - [ ] Chapitre 10 : Supprimer des propriétés d'un objet

@@ -4,9 +4,9 @@
 
 - [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
 - [X] [Chapitre 02](./chapitre-02) : Variables
-- [ ] [Chapitre 03](./chapitre-03) : Booléens
-- [ ] Chapitre 04 : Nombres
-- [ ] Chapitre 05 : Créer des chaînes de caractères
+- [X] [Chapitre 03](./chapitre-03) : Booléens
+- [X] [Chapitre 04](./chapitre-04) : Nombres
+- [ ] [Chapitre 05](./chapitre-05) : Chaîne de caractères
 - [ ] Chapitre 06 : Construire des branchements conditionels
 - [ ] Chapitre 07 : Créer des objets
 - [ ] Chapitre 08 : Ajouter des propriétés à un objet

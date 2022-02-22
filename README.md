@@ -2,10 +2,10 @@
 
 ## Sommaire
 
-- [ ] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
-- [ ] Chapitre 02 : Créer et modifier une variable
-- [ ] Chapitre 03 : Créer des constantes
-- [ ] Chapitre 04 : Créer des nombres
+- [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
+- [X] [Chapitre 02](./chapitre-02) : Variables
+- [ ] [Chapitre 03](./chapitre-03) : Booléens
+- [ ] Chapitre 04 : Nombres
 - [ ] Chapitre 05 : Créer des chaînes de caractères
 - [ ] Chapitre 06 : Construire des branchements conditionels
 - [ ] Chapitre 07 : Créer des objets

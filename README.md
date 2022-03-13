@@ -1,5 +1,14 @@
 # esgi-javascript-1a2-2022
 
+## Contrôles Continus
+
+- Premier contrôle continu : à prevoir
+- Deuxième contrôle continu : à prévoir
+
+## Examen
+
+- Date à prévoir
+
 ## Sommaire
 
 - [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur
@@ -11,24 +20,8 @@
 - [X] [Chapitre 07](./chapitre-07) : Objets
 - [X] [Chapitre 08](./chapitre-08) : Créer des fonctions
 - [X] [Chapitre 09](./chapitre-09) : Tableaux
-- [ ] [Chapitre 10](./chapitre-10) : Constructeurs
-- [ ] Chapitre ??? : Ajouter des éléments à un tableau
-- [ ] Chapitre ??? : Supprimer des éléments à un tableau
-- [ ] Chapitre ??? : Modifier des éléments à un tableau
-- [ ] Chapitre ??? : Boucler sur les valeurs d'un tableau
-- [ ] Chapitre ??? : Boucler sur les indexes d'un tableau
-- [ ] Chapitre ??? : Récupérer un élément HTML par son identifiant
-- [ ] Chapitre ??? : Récupérer plusieurs éléments HTML par leur classe
-- [ ] Chapitre ??? : Récupérer un élément HTML par son sélécteur CSS
-- [ ] Chapitre ??? : Récupérer plusieurs éléments HTML par leur sélécteur CSS
-- [ ] Chapitre ??? : Modifier le contenu texte d'un élément HTML
-- [ ] Chapitre ??? : Ajouter un élément HTML à un autre élément HTML
-- [ ] Chapitre ??? : Supprimer un élément HTML à un autre élément HTML
-- [ ] Chapitre ??? : Ajouter une classe à un élément HTML
-- [ ] Chapitre ??? : Créer des documents XML
-- [ ] Chapitre ??? : Créer des balises XML
-- [ ] Chapitre ??? : Ajouter des attributs à une balise XML
-- [ ] Chapitre ??? : Récupérer des documents XML distants
-- [ ] Chapitre ??? : Afficher le contenu d'un document XML distant dans une page HTML
-- [ ] Chapitre ??? : Exécuter des instructions après un délai
-- [ ] Chapitre ??? : Exécuter des instructions à interval régulier
+- [X] [Chapitre 10](./chapitre-10) : Constructeurs
+- [ ] [Chapitre 11](./chapitre-11) : Web API DOM
+- [ ] [Chapitre 12](./chapitre-12) : Web API CSSOM
+- [ ] [Chapitre 13](./chapitre-13) : XML
+- [ ] [Chapitre 14](./chapitre-14) : Web API XMLHttpRequest

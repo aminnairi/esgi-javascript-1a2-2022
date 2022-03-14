@@ -73,3 +73,8 @@ fruitForm.addEventListener("submit", function(event) {
   // Remettre le focus sur un input
   fruitInput.focus();
 });
+
+// A faire : empêcher que le formulaire puisse ajouter un fruit vide
+// A faire : Ajouter une zone de message d'erreur qui s'affiche uniquement lorsqu'un fruit vide est ajouté
+// A faire : Le message d'erreur doit avoir une couleur de texte rouge
+// A faire : pouvoir supprimer un fruit

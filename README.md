@@ -2,7 +2,7 @@
 
 ## Contrôles Continus
 
-- Premier contrôle continu : à prevoir
+- Premier contrôle continu : Mardi 22 (QCM)
 - Deuxième contrôle continu : à prévoir
 
 ## Examen
@@ -25,3 +25,7 @@
 - [ ] [Chapitre 12](./chapitre-12) : Web API CSSOM
 - [ ] [Chapitre 13](./chapitre-13) : XML
 - [ ] [Chapitre 14](./chapitre-14) : Web API XMLHttpRequest
+
+## Exercices
+
+- [ ] [Exercice 1](./exercice-1)

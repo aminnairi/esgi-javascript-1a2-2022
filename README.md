@@ -21,8 +21,8 @@
 - [X] [Chapitre 08](./chapitre-08) : Créer des fonctions
 - [X] [Chapitre 09](./chapitre-09) : Tableaux
 - [X] [Chapitre 10](./chapitre-10) : Constructeurs
-- [ ] [Chapitre 11](./chapitre-11) : Web API DOM
-- [ ] [Chapitre 12](./chapitre-12) : Web API CSSOM
+- [X] [Chapitre 11](./chapitre-11) : Web API DOM
+- [X] [Chapitre 12](./chapitre-12) : Web API CSSOM
 - [ ] [Chapitre 13](./chapitre-13) : XML
 - [ ] [Chapitre 14](./chapitre-14) : Web API XMLHttpRequest
 

@@ -2,7 +2,7 @@
 
 ## Contrôles Continus
 
-- [X] Premier contrôle continu : Mardi 12/04/2022 (QCM)
+- [X] Premier contrôle continu : Mardi 22 (QCM)
 - [ ] Deuxième contrôle continu : à prévoir
 
 ## Examen

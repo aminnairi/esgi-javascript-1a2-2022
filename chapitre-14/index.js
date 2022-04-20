@@ -43,3 +43,4 @@ button.addEventListener("click", function() {
 
 // TODO: ajouter un champ de recherche pour chaque en-tête
 // Filtrer les lignes du tableau qui ne correspondent pas à la recherche
+// TODO: faire en sorte que le bouton n'ajoute pas de duplicat de ligne

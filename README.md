@@ -9,6 +9,10 @@
 
 - Date à prévoir
 
+## Travail à faire
+
+- [ ] Finir l'exercise 2 (correction le 23/05/2022)
+
 ## Sommaire
 
 - [X] [Chapitre 01](./chapitre-01) : Afficher du texte dans la console de développeur

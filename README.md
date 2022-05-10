@@ -28,4 +28,5 @@
 
 ## Exercices
 
-- [ ] [Exercice 1](./exercice-1)
+- [X] [Exercice 1](./exercice-1)
+- [ ] [Exercice 2](./exercice-2)

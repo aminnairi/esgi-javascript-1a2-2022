@@ -22,7 +22,7 @@
 
 ## Travail à faire
 
-- [ ] Finir l'exercise 2 (correction le 23/05/2022)
+- [ ] Finir l'exercise 2 (correction le 16/05/2022)
 
 ## Sommaire
 

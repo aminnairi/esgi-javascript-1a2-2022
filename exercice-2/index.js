@@ -1,3 +1,4 @@
+"use strict";
 // https://openweathermap.org/api
 // Champ de texte avec la possibilité de rentrer un nom de ville
 // À chaque fois que je clique sur un bouton "recherche", afficher la météo pour cette ville
@@ -15,11 +16,11 @@ if (!weatherForm) {
 // Chaque fois que le formulaire est soumi, exécute cette fonction
 // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
 // https://developer.mozilla.org/fr/docs/Web/API/HTMLFormElement/submit_event
-weatherForm.addEventListener("submit", function(event) {
+weatherForm.addEventListener("submit", submitEvent => {
   // Empêche le comportement par défaut du navigateur (envoi d'une requête HTTP et rechargement de la page)
   // https://developer.mozilla.org/fr/docs/Web/API/Event/preventDefault
-  event.preventDefault();
-  
+  submitEvent.preventDefault();
+
   // Récupère l'élément du DOM correspondant à la balise <input id="key">
   // https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
   const keyInput = document.getElementById("key");
@@ -63,7 +64,7 @@ weatherForm.addEventListener("submit", function(event) {
   const key = keyInput.value;
 
   // Créé l'URL finale permettant de récupérer la temperature pour une ville, en utilisant des °C et en récupérant une réponse au format XML
-  const url = "https://api.openweathermap.org/data/2.5/weather?mode=xml&units=metric&q=" + city + "&appid=" + key;
+  const url = `https://api.openweathermap.org/data/2.5/weather?mode=xml&units=metric&q=${city}&appid=${key}`;
 
   // La méthode HTTP utilisée pour la requête
   // https://developer.mozilla.org/fr/docs/Web/HTTP/Methods
@@ -72,10 +73,10 @@ weatherForm.addEventListener("submit", function(event) {
   // Lorsque la réponse HTTP est récupérée depuis le serveur
   // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
   // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/load_event
-  request.addEventListener("load", function() {
+  request.addEventListener("load", () => {
     // Récupère le document XML parsé de la réponse du serveur
     // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseXML
-    const responseXML = request.responseXML;
+    const {responseXML} = request;
 
     // Récupère le premier enfant du document XML (l'élément <current></current>)
     // https://developer.mozilla.org/fr/docs/Web/API/Element/children
@@ -95,7 +96,7 @@ weatherForm.addEventListener("submit", function(event) {
 
     // Change le paragraphe final du document HTML pour y ajouter la température de la ville séléctionnée par l'utilisateur
     // https://developer.mozilla.org/fr/docs/Web/API/HTMLElement/innerText
-    outputElement.innerText = "Temperature for " + city + " is " + temperatureValue + "°C";
+    outputElement.innerText = `Temperature for ${city} is ${temperatureValue}°C`;
   });
 
   // Configure la requête

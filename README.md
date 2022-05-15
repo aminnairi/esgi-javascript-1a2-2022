@@ -1,5 +1,16 @@
 # esgi-javascript-1a2-2022
 
+## Séances
+
+- [X] Séance #1
+- [X] Séance #2
+- [X] Séance #3
+- [X] Séance #4
+- [ ] Séance #5
+- [ ] Séance #6
+- [ ] Séance #7
+- [ ] Séance #8
+
 ## Contrôles Continus
 
 - [X] Premier contrôle continu : Mardi 22 (QCM)

@@ -29,7 +29,11 @@ weatherForm.addEventListener("submit", function(submitEvent) {
 
   // Récupère l'élément du DOM correspondant à la balise <input id="city">
   // https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
-  const cityInput = document.getElementById("city"); // null
+  const cityInput = document.getElementById("city");
+
+  // Récupère l'élément du DOM correspondant à la balise <button id="cancel">Cancel</button>
+  // developer.mozilla.org/fr/docs/Web/API/Document/getElementById
+  const cancelButton = document.getElementById("cancel");
 
   // Récupère l'élément du DOM correspondant à la balise <p id="output"></p>
   // https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
@@ -53,6 +57,13 @@ weatherForm.addEventListener("submit", function(submitEvent) {
     return;
   }
 
+  if (!cancelButton) {
+    // Lève une exception si l'élément n'est pas trouvé dans le DOM (supprimé manuellement ou ID incorrect)
+    // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/throw
+    console.info("Cancel button not found in the current DOM");
+    return;
+  }
+
   if (!outputElement) {
     // Lève une exception si l'élément n'est pas trouvé dans le DOM (supprimé manuellement ou ID incorrect)
     // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/throw
@@ -69,11 +80,33 @@ weatherForm.addEventListener("submit", function(submitEvent) {
   const key = keyInput.value;
 
   // Créé l'URL finale permettant de récupérer la temperature pour une ville, en utilisant des °C et en récupérant une réponse au format XML
+  // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Template_literals
   const url = `https://api.openweathermap.org/data/2.5/weather?mode=xml&units=metric&q=${city}&appid=${key}`;
 
   // La méthode HTTP utilisée pour la requête
   // https://developer.mozilla.org/fr/docs/Web/HTTP/Methods
   const method = "GET";
+
+  // La fonction à déclencher à chaque fois qu'il y a un clic sur un des boutons
+  // https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions
+  function onCancelButtonClicked() {
+    // Annulation de la requête en cours
+    // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort
+    request.abort();
+
+    // Suppression de l'écouteur d'événement (pour éviter d'écouter trop de fois le même événement)
+    // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/removeEventListener
+    cancelButton.removeEventListener("click", onCancelButtonClicked);
+
+    // Met l'attribut disabled à vrai lorsque l'on a annulé une requête
+    // pour éviter d'appuyer de nouveau pour rien sur le bouton
+    // https://developer.mozilla.org/fr/docs/Web/API/Element/setAttribute
+    cancelButton.setAttribute("disabled", "disabled");
+  }
+
+  // Lorsque le formulaire est soumis, écoute le clic du bouton "Cancel"
+  // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
+  cancelButton.addEventListener("click", onCancelButtonClicked);
 
   // Lorsque la réponse HTTP est récupérée depuis le serveur
   // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
@@ -111,4 +144,8 @@ weatherForm.addEventListener("submit", function(submitEvent) {
   // Envoi la requête HTTP (c'est le navigateur qui l'envoi pour nous)
   // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send
   request.send();
+
+  // Supprime l'attribut disabled une fois que l'on envoi une nouvelle requête
+  // https://developer.mozilla.org/fr/docs/Web/API/Element/removeAttribute
+  cancelButton.removeAttribute("disabled");
 });

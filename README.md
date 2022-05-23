@@ -6,7 +6,7 @@
 - [X] Séance #2
 - [X] Séance #3
 - [X] Séance #4
-- [ ] Séance #5
+- [X] Séance #5
 - [ ] Séance #6
 - [ ] Séance #7
 - [ ] Séance #8
@@ -45,3 +45,4 @@
 
 - [X] [Exercice 1](./exercice-1)
 - [ ] [Exercice 2](./exercice-2)
+- [ ] [Exercice 3](./exercice-3)

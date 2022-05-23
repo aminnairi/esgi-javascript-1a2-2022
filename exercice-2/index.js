@@ -2,6 +2,8 @@
 // https://openweathermap.org/api
 // Champ de texte avec la possibilité de rentrer un nom de ville
 // À chaque fois que je clique sur un bouton "recherche", afficher la météo pour cette ville
+// À faire: un bouton "Cancel" ("Annuler") qui permet d'annuler une requête HTTP
+// https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/abort
 
 // Récupère l'élément du DOM correspondant au formulaire
 // https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
@@ -16,7 +18,7 @@ if (!weatherForm) {
 // Chaque fois que le formulaire est soumi, exécute cette fonction
 // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
 // https://developer.mozilla.org/fr/docs/Web/API/HTMLFormElement/submit_event
-weatherForm.addEventListener("submit", submitEvent => {
+weatherForm.addEventListener("submit", function(submitEvent) {
   // Empêche le comportement par défaut du navigateur (envoi d'une requête HTTP et rechargement de la page)
   // https://developer.mozilla.org/fr/docs/Web/API/Event/preventDefault
   submitEvent.preventDefault();
@@ -27,7 +29,7 @@ weatherForm.addEventListener("submit", submitEvent => {
 
   // Récupère l'élément du DOM correspondant à la balise <input id="city">
   // https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
-  const cityInput = document.getElementById("city");
+  const cityInput = document.getElementById("city"); // null
 
   // Récupère l'élément du DOM correspondant à la balise <p id="output"></p>
   // https://developer.mozilla.org/fr/docs/Web/API/Document/getElementById
@@ -40,19 +42,22 @@ weatherForm.addEventListener("submit", submitEvent => {
   if (!keyInput) {
     // Lève une exception si l'élément n'est pas trouvé dans le DOM (supprimé manuellement ou ID incorrect)
     // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/throw
-    throw new Error("Key input not found in the current DOM");
+    console.info("Key input not found in the current DOM");
+    return;
   }
 
   if (!cityInput) {
     // Lève une exception si l'élément n'est pas trouvé dans le DOM (supprimé manuellement ou ID incorrect)
     // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/throw
-    throw new Error("City input not found in the current DOM");
+    console.info("City input not found in the current DOM");
+    return;
   }
 
   if (!outputElement) {
     // Lève une exception si l'élément n'est pas trouvé dans le DOM (supprimé manuellement ou ID incorrect)
     // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/throw
-    throw new Error("Output element not found in the current DOM");
+    console.info("Output element not found in the current DOM");
+    return;
   }
 
   // Récupère la valeur du champ de texte
@@ -73,10 +78,10 @@ weatherForm.addEventListener("submit", submitEvent => {
   // Lorsque la réponse HTTP est récupérée depuis le serveur
   // https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
   // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/load_event
-  request.addEventListener("load", () => {
+  request.addEventListener("load", function () {
     // Récupère le document XML parsé de la réponse du serveur
     // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/responseXML
-    const {responseXML} = request;
+    const responseXML = request.responseXML;
 
     // Récupère le premier enfant du document XML (l'élément <current></current>)
     // https://developer.mozilla.org/fr/docs/Web/API/Element/children
